@@ -1,58 +1,67 @@
 .figure_section {
-  max-width: 100vw;
-  margin: 80px 0;
+    /* max-width: 100vw;
+    margin: 80px 0; */
+    max-width: 900px;
+    margin: auto;
 }
 
 figure {
-  max-width: var(--wide);
-  margin: auto;
+    /* max-width: var(--wide);
+    margin: auto; */
+    margin: 80px 0;
 }
 
 .figure_section figcaption {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
+.figure_image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
 
 @media only screen and (max-width: 767px) {
-  .figure_section {
-    margin: 40px 0;
-  }
+    .figure_section {
+        margin: auto;
+        max-width: var(--contentWidthMobile);
+    }
 
-  figure {
-    max-width: 100%;
-  }
+    figure {
+        max-width: 100%;
+    }
 
-  .figure_section figcaption {
-    margin-top: 8px;
-  }
+    .figure_section figcaption {
+        margin-top: 8px;
+    }
 }
 
-
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .figure_section {
-    margin: 40px 0;
-  }
+    .figure_section {
+        margin: auto;
+        max-width: calc(100% - 185px);
+    }
 
-  figure {
-    max-width: 100%;
-  }
+    figure {
+        max-width: 100%;
+    }
 
-  .figure_section figcaption {
-    margin-top: 8px;
-  }
+    .figure_section figcaption {
+        margin-top: 8px;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-  .figure_section {
-    margin: 60px 0;
-  }
+    .figure_section {
+        margin: auto;
+        max-width: calc(100% - 350px);
+    }
 
- 
-  figure {
-    max-width: calc(100% - 260px);
-  }
+    figure {
+        max-width: 100%;
+    }
 
-  .figure figcaption {
-    margin-top: 8px;
-  }
+    .figure figcaption {
+        margin-top: 8px;
+    }
 }
