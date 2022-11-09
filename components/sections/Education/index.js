@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('education')
@@ -11,6 +11,8 @@ module.exports = cx.contentElement
         cx.part.backgroundImage.withLabel('Background Image'),
         cx.part.plainText.withLabel('Subheading'),
         cx.part.plainText.withLabel('Number'),
-        cx.part.formattedText.withLabel('Text'),
+        cx.part.formattedText
+            .withLabel('Text')
+            .withHtmlEditorConfig(require('../../../configs/full')),
         cx.part.link.withLabel('Button')
-    )
+    );

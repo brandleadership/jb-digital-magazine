@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('card')
@@ -10,7 +10,11 @@ module.exports = cx.contentElement
         cx.part.backgroundImage.withLabel('Background Image'),
         cx.part.link.withLabel('Card Link'),
         cx.part.plainText.withLabel('Subheading'),
-        cx.part.formattedText.withLabel('Card Title'),
-        cx.part.formattedText.withLabel('Card Text'),
+        cx.part.formattedText
+            .withLabel('Card Title')
+            .withHtmlEditorConfig(require('../../../configs/full')),
+        cx.part.formattedText
+            .withLabel('Card Text')
+            .withHtmlEditorConfig(require('../../../configs/full')),
         cx.part.plainText.withLabel('Text')
-    )
+    );
