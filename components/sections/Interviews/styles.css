@@ -15,12 +15,13 @@
 }
 
 .interviews_columnOne {
-    max-width: calc(50vw - 130px);
+    /* max-width: calc(50vw - 130px); */
     box-sizing: border-box;
     padding-right: 96px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    width: 55vw;
 }
 
 .interviews_content {
