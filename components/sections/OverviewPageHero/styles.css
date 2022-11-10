@@ -81,6 +81,14 @@
     transition-timing-function: ease-out;
 }
 
+.show-btn .overviewpagehero_button {
+    display: block;
+}
+
+.hide-btn .overviewpagehero_button {
+    visibility: hidden;
+}
+
 @media only screen and (min-width: 1930px) {
     .overviewpagehero_logo {
         margin-left: calc(50% - 100px);
