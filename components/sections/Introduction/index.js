@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('introduction')
@@ -7,6 +7,10 @@ module.exports = cx.contentElement
     .withIcon(Icon.SNIPPET)
     .withFile(require('./template.twig'))
     .withParts(
-        cx.part.formattedText.withLabel('Introduction Title'),
-        cx.part.formattedText.withLabel('Text Editor')
-    )
+        cx.part.formattedText
+            .withLabel('Introduction Title')
+            .withHtmlEditorConfig(require('../../../configs/full')),
+        cx.part.formattedText
+            .withLabel('Text Editor')
+            .withHtmlEditorConfig(require('../../../configs/full'))
+    );
