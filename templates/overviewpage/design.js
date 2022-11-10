@@ -1,6 +1,6 @@
-require('./styles/styles.scss')
+require('./styles/styles.scss');
 
-const { cx, Locale } = require('@bsi-cx/design-build')
+const { cx, Locale } = require('@bsi-cx/design-build');
 
 module.exports = cx.design
     .withTitle('Detailpage Digital Magazine')
@@ -16,6 +16,8 @@ module.exports = cx.design
             .withContentElements(
                 require('../../components/sections/OverviewPageHero'),
                 require('../../components/sections/Introduction'),
+                require('../../components/sections/SliderSection'),
+                require('../../components/sections/GlossarySection'),
                 require('../../components/sections/Interviews'),
                 require('../../components/sections/Education'),
                 require('../../components/sections/Contact'),
@@ -27,6 +29,7 @@ module.exports = cx.design
             .withContentElements(
                 require('../../components/elements/Lead'),
                 require('../../components/elements/Card'),
+                require('../../components/elements/Definition'),
                 require('../../components/elements/InterviewTeaser')
             )
-    )
+    );

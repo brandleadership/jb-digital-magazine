@@ -1,9 +1,13 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
-    .withElementId('lead')
-    .withLabel('Lead')
+    .withElementId('definition')
+    .withLabel('Definition')
     .withDescription('')
     .withIcon(Icon.SNIPPET)
     .withFile(require('./template.twig'))
-    .withParts(cx.part.formattedText.withLabel('Lead Text'))
+    .withParts(
+        cx.part.formattedText
+            .withLabel('Text')
+            .withHtmlEditorConfig(require('../../../configs/full'))
+    );
