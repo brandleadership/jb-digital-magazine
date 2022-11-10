@@ -6,6 +6,7 @@ module.exports = cx.contentElement
     .withDescription('')
     .withIcon(Icon.SNIPPET)
     .withFile(require('./template.twig'))
+    .withStyleConfigs(require('../../../configs/styles/slider-bg-color'))
     .withParts(
         cx.part.formattedText
             .withLabel('Title')
