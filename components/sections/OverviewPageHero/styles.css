@@ -5,7 +5,7 @@
     justify-content: space-between;
     aspect-ratio: 2 / 1;
     position: relative;
-    background-size: cover;
+    background-size: 110%;
     background-repeat: no-repeat;
     background-position: center;
     scroll-snap-align: start;
@@ -227,7 +227,7 @@
     }
     to {
         opacity: 1;
-        background-size: 100%;
+        background-size: 110%;
     }
 }
 
