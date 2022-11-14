@@ -322,6 +322,9 @@
         position: relative;
         top: unset;
         overflow-y: hidden;
+    }
+
+    .cardslider .slider_carousel__viewport {
         max-height: 420px;
     }
 

@@ -24,6 +24,7 @@
 @import '../../../components/elements/CardSlider/styles.css';
 @import '../../../components/elements/GlossarySlider/styles.css';
 @import '../../../components/elements/InterviewTeaser/styles.css';
+@import '../../../components/elements/LanguageSwitcher/styles.css';
 
 :root {
     --royalblue: #141e55;
@@ -110,8 +111,8 @@ p {
     color: white;
 }
 
-.white-bg h2,
-.white-bg p {
+.white-bg #overlay h2,
+.white-bg #overlay p {
     color: black;
 }
 

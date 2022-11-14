@@ -5,7 +5,7 @@
     justify-content: space-between;
     aspect-ratio: 2 / 1;
     position: relative;
-    background-size: 110%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     scroll-snap-align: start;
@@ -33,6 +33,12 @@
     padding: 28px 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+
+.overviewpagehero_header div {
+    width: calc((100vw - 80px) / 3);
 }
 
 .overviewpagehero_logo {
@@ -40,7 +46,8 @@
     width: 200px;
     display: flex;
     justify-content: center;
-    margin-left: calc(50vw - 100px);
+    /* margin-left: calc(50vw - 100px); */
+    z-index: 5;
 }
 
 .overviewpagehero_heroContent {
@@ -78,15 +85,24 @@
     transition-timing-function: ease-out;
 }
 
+.show-btn .overviewpagehero_button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hide-btn .overviewpagehero_button {
+    visibility: hidden;
+}
+
 @media only screen and (min-width: 1930px) {
     .overviewpagehero_logo {
-        margin-left: calc(50% - 100px);
+        /* margin-left: calc(50% - 100px); */
     }
 }
 
-.overviewpagehero_button {
+/* .overviewpagehero_button {
     margin-right: 40px;
-}
+} */
 
 .overviewpagehero_button a {
     padding: 17px 32px;
@@ -162,7 +178,22 @@
         min-width: unset;
         border: unset;
         margin-right: unset;
+        display: block;
+        width: 30px;
+        height: 18px;
+        padding: 0;
+        margin-top: 0;
+    }
+    .overviewpagehero_button a p {
         display: none;
+    }
+    .overviewpagehero_button a svg {
+        display: block;
+    }
+
+    .overviewpagehero_button a svg path {
+        display: block;
+        stroke: white !important;
     }
 
     /* .overviewpagehero_button p {
@@ -213,7 +244,7 @@
 
 @media only screen and (min-width: 1023px) and (max-width: 1439px) {
     .overviewpagehero_button {
-        display: none;
+        display: block;
     }
 }
 
@@ -222,11 +253,11 @@
 @keyframes backgroundImageReveal {
     from {
         opacity: 0;
-        background-size: 140%;
+        background-size: auto 140%;
     }
     to {
         opacity: 1;
-        background-size: 110%;
+        background-size: auto 100%;
     }
 }
 

@@ -1,10 +1,13 @@
-<div class="overviewpagehero_section"
+<div class="overviewpagehero_section show-btn"
     data-bsi-element="overviewpagehero"
     data-bsi-element-part="background-image"
     style="background-image: url('{{ bsi_cx_asset('./hero.jpg') }}');"
     id="top">
     <div class="overviewpagehero_imageOverlay">
         <div class="overviewpagehero_header">
+            <div class="overviewpagehero_languageswitcher">
+                {% include '../../elements/LanguageSwitcher/template.twig' %}
+            </div>
             <div class="overviewpagehero_logo">
                 <svg width="119"
                     height="24"
@@ -24,9 +27,9 @@
                     buttonLink: '[orderPublication]'
                 } %}
             </div>
-            <div class="overviewpagehero_menu">
+            {# <div class="overviewpagehero_menu">
                 <svg src="icons/menu.svg" />
-            </div>
+            </div> #}
         </div>
         <div class="overviewpagehero_heroContent">
             <div class="overviewpagehero_content">
