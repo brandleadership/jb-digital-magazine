@@ -37,6 +37,10 @@
     margin: 0 40px;
 }
 
+.overviewpagehero_header div {
+    width: calc((100vw - 80px) / 3);
+}
+
 .overviewpagehero_logo {
     margin: auto;
     width: 200px;
@@ -82,7 +86,8 @@
 }
 
 .show-btn .overviewpagehero_button {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .hide-btn .overviewpagehero_button {
@@ -91,7 +96,7 @@
 
 @media only screen and (min-width: 1930px) {
     .overviewpagehero_logo {
-        margin-left: calc(50% - 100px);
+        /* margin-left: calc(50% - 100px); */
     }
 }
 
