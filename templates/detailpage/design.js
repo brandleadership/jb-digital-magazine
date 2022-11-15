@@ -4,9 +4,8 @@ const { cx, Locale } = require('@bsi-cx/design-build');
 
 module.exports = cx.design
     .withTitle('Detailpage Digital Magazine')
-    .withAuthor('BSI Business Systems Integration AG')
-    .withDate('20.05.2022')
-    .withPreviewImage(require('./thumbnail.png'))
+    .withAuthor('gateB')
+    .withDate('10.11.2022')
     .withDefaultLocale(Locale.EN)
     .withLocales(Locale.EN, Locale.DE)
     .withContentElementGroups(
