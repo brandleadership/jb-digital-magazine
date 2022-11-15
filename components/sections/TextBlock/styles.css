@@ -1,65 +1,69 @@
 .textblock_section {
-  max-width: var(--normalWidthText);
-  margin: 96px auto 120px;
+    max-width: var(--normalWidthText);
+    margin: 96px auto 120px;
 }
 
 .textblock_section h4 {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .textblock_section li::marker {
-  content: "—   ";
+    content: '—   ';
+}
+
+.textblock_text a {
+    text-decoration: none;
+    color: var(--reflexblue);
 }
 
 @media only screen and (max-width: 767px) {
-  .textblock_section {
-    margin: 60px auto;
-    max-width: var(--contentWidthMobile);
-  }
+    .textblock_section {
+        margin: 60px auto;
+        max-width: var(--contentWidthMobile);
+    }
 
-  .textblock_section h4 {
-    margin-bottom: 16px;
-  }
+    .textblock_section h4 {
+        margin-bottom: 16px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .textblock_section {
-    margin: 60px auto;
-    max-width: var(--textWidthTablet);
-  }
+    .textblock_section {
+        margin: 60px auto;
+        max-width: var(--textWidthTablet);
+    }
 
-  .textblock_section h4 {
-    margin-bottom: 16px;
-  }
+    .textblock_section h4 {
+        margin-bottom: 16px;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-  .textblock_section {
-    margin: 80px auto;
-    max-width: var(--textWidthDesktop);
-  }
+    .textblock_section {
+        margin: 80px auto;
+        max-width: var(--textWidthDesktop);
+    }
 
-  .textblock_section h4 {
-    margin-bottom: 16px;
-  }
+    .textblock_section h4 {
+        margin-bottom: 16px;
+    }
 }
-
 
 .textblock_text,
 .textblock_text * {
-  font-size: 20px;
-  line-height: 150%;
+    font-size: 20px;
+    line-height: 150%;
 }
 
 .textblock_text,
 .textblock_text p {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 @media only screen and (max-width: 1023px) {
-  .textblock_text,
-  .textblock_text p {
-    font-size: 18px;
-    line-height: 150%;
-  }
+    .textblock_text,
+    .textblock_text p {
+        font-size: 18px;
+        line-height: 150%;
+    }
 }

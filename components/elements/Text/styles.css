@@ -1,18 +1,23 @@
 .text,
 .text * {
-  font-size: 20px;
-  line-height: 150%;
+    font-size: 20px;
+    line-height: 150%;
 }
 
 .text,
 .text p {
-  font-weight: 300;
+    font-weight: 300;
+}
+
+.text a {
+    text-decoration: none;
+    color: var(--reflexblue);
 }
 
 @media only screen and (max-width: 1023px) {
-  .text,
-  .text p {
-    font-size: 18px;
-    line-height: 150%;
-  }
+    .text,
+    .text p {
+        font-size: 18px;
+        line-height: 150%;
+    }
 }

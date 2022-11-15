@@ -6,6 +6,11 @@
     line-height: 155%;
 }
 
+.smalltext a {
+    text-decoration: none;
+    color: var(--reflexblue);
+}
+
 @media only screen and (max-width: 1023px) {
     .smalltext {
         font-weight: 300;
