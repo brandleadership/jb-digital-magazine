@@ -7,6 +7,9 @@ module.exports = cx.contentElement
     .withIcon(Icon.SNIPPET)
     .withFile(require('./template.twig'))
     .withParts(
+        cx.part.formattedText
+            .withLabel('Figure Title')
+            .withHtmlEditorConfig(require('../../../configs/full')),
         cx.part.image.withLabel('Image'),
         cx.part.formattedText
             .withLabel('Image Description')

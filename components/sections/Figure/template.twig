@@ -1,6 +1,11 @@
 <section class="figure_section" data-bsi-element="figure">
     <figure>
-        <img class="figure_image" data-bsi-element-part="image" src="{{ bsi_cx_asset('./educational.jpg') }}" />
+        {% include '../../elements/Subheading/template.twig' with {
+            subheading: 'Figure Title'
+        } %}
+        <img class="figure_image"
+            data-bsi-element-part="image"
+            src="{{ bsi_cx_asset('./educational.jpg') }}" />
         <figcaption data-bsi-element-part="formatted-text">
             Image Description
             <br />
