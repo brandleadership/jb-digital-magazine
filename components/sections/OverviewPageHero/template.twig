@@ -1,4 +1,4 @@
-<div class="overviewpagehero_section show-btn"
+<div class="overviewpagehero_section show-btn download-btn"
     data-bsi-element="overviewpagehero"
     data-bsi-element-part="background-image"
     style="background-image: url('{{ bsi_cx_asset('./hero.jpg') }}');"
@@ -22,14 +22,11 @@
             </div>
             <div class="overviewpagehero_button">
                 {% include '../../elements/Button/template.twig' with {
-                    downloadIcon: true,
+                    linkIcon: true,
                     text: 'Order Publication',
                     buttonLink: '[orderPublication]'
                 } %}
             </div>
-            {# <div class="overviewpagehero_menu">
-                <svg src="icons/menu.svg" />
-            </div> #}
         </div>
         <div class="overviewpagehero_heroContent">
             <div class="overviewpagehero_content">

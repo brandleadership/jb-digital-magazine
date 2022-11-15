@@ -46,7 +46,6 @@
     width: 200px;
     display: flex;
     justify-content: center;
-    /* margin-left: calc(50vw - 100px); */
     z-index: 5;
 }
 
@@ -85,25 +84,6 @@
     transition-timing-function: ease-out;
 }
 
-.show-btn .overviewpagehero_button {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.hide-btn .overviewpagehero_button {
-    visibility: hidden;
-}
-
-@media only screen and (min-width: 1930px) {
-    .overviewpagehero_logo {
-        /* margin-left: calc(50% - 100px); */
-    }
-}
-
-/* .overviewpagehero_button {
-    margin-right: 40px;
-} */
-
 .overviewpagehero_button a {
     padding: 17px 32px;
     min-width: 240px;
@@ -133,8 +113,13 @@
 .overviewpagehero_button:hover a svg path:nth-child(2),
 .overviewpagehero_button:hover a svg path:last-child {
     stroke: white;
-    transition: stroke 0.2s;
+    transition: stroke 0.2s, fill 0.2;
     transition-timing-function: ease-in;
+}
+
+.overviewpagehero_button:hover a svg.download-icon path:last-child {
+    stroke: transparent;
+    fill: white;
 }
 
 .overviewpagehero_menu {
@@ -184,27 +169,30 @@
         padding: 0;
         margin-top: 0;
     }
+
+    .overviewpagehero_button:hover a {
+        border: none;
+        background-color: transparent;
+        transition: background-color 0.2s;
+    }
+
     .overviewpagehero_button a p {
         display: none;
     }
+
     .overviewpagehero_button a svg {
         display: block;
     }
 
-    .overviewpagehero_button a svg path {
+    .overviewpagehero_button a svg.download-icon path:last-child {
         display: block;
-        stroke: white !important;
+        fill: white;
     }
 
-    /* .overviewpagehero_button p {
-    display: none;
-  } */
-
-    /* Button for PocketGuide */
-
-    /* .overviewpagehero_button {
-    display: none;
-  } */
+    .overviewpagehero_button a svg.link-icon path:last-child {
+        stroke: white;
+        fill: transparent;
+    }
 
     .overviewpagehero_chapter div:first-child {
         transform: rotate(0deg);
@@ -366,4 +354,31 @@
     animation-name: exploreReveal;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+}
+
+/* Styles for BSI Editor Styles */
+
+.show-btn .overviewpagehero_button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hide-btn .overviewpagehero_button {
+    visibility: hidden;
+}
+
+.download-btn svg.download-icon {
+    display: block;
+}
+
+.download-btn svg.link-icon {
+    display: none;
+}
+
+.link-btn svg.download-icon {
+    display: none;
+}
+
+.link-btn svg.link-icon {
+    display: block;
 }

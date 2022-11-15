@@ -6,7 +6,10 @@ module.exports = cx.contentElement
     .withDescription('')
     .withIcon(Icon.SNIPPET)
     .withFile(require('./template.twig'))
-    .withStyleConfigs(require('../../../configs/styles/overviewpage-button'))
+    .withStyleConfigs(
+        require('../../../configs/styles/display-button'),
+        require('../../../configs/styles/button-icon')
+    )
     .withParts(
         cx.part.backgroundImage.withLabel('Background Image'),
         cx.part.formattedText
