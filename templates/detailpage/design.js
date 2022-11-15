@@ -6,6 +6,7 @@ module.exports = cx.design
     .withTitle('Detailpage Digital Magazine')
     .withAuthor('gateB')
     .withDate('10.11.2022')
+    /* .withPreviewImage(require('./preview.png')) */
     .withDefaultLocale(Locale.EN)
     .withLocales(Locale.EN, Locale.DE)
     .withContentElementGroups(

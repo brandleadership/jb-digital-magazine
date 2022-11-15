@@ -1,3 +1,3 @@
 module.exports = {
-  title: 'BSI CX Scaffold Template - Landingpage'
+    title: 'JB Digital Magazine - Landingpage',
 };
