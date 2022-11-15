@@ -149,3 +149,13 @@
         text-align: start;
     }
 }
+
+/* BSI Styles */
+
+.show-btn .btn_secondary {
+    display: flex;
+}
+
+.hide-btn .btn_secondary {
+    display: none;
+}

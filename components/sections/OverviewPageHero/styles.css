@@ -366,19 +366,3 @@
 .hide-btn .overviewpagehero_button {
     visibility: hidden;
 }
-
-.download-btn svg.download-icon {
-    display: block;
-}
-
-.download-btn svg.link-icon {
-    display: none;
-}
-
-.link-btn svg.download-icon {
-    display: none;
-}
-
-.link-btn svg.link-icon {
-    display: block;
-}

@@ -1,29 +1,32 @@
-<section class="two-buttons contact_section" data-bsi-element="contact" id="contact">
-      <div class="contact_title">
+<section class="contact_section show-btn link-btn"
+    data-bsi-element="contact"
+    id="contact">
+    <div class="contact_title">
         {% include '../../../components/elements/Subtitle/template.twig' with {
-          subtitle: "Contact"
+            subtitle: 'Contact'
         } %}
-      </div>
-      <div class="contact_content">
+    </div>
+    <div class="contact_content">
         <div data-bsi-element-part="formatted-text">
-          <p class="contact_text">
-            Discover new opportunities for your portfolio. Our experts would be happy to discuss all
-            of the options available to you.
-          </p>
+            <p class="contact_text">
+                Discover new opportunities for your portfolio. Our experts would
+                be happy to discuss all of the options available to you.
+            </p>
         </div>
         <div class="contact_btnWrapper">
-          {% include '../../../components/elements/Button/template.twig' with {
-              text: "Contact us",
-              dark: true,
-              buttonLink: "[contactUs]"
-            } %}
-          <div class="contact_hidden">
             {% include '../../../components/elements/Button/template.twig' with {
-              text: "Order Publication",
-              downloadIcon: true,
-              buttonLink: "[orderPublication]"
+                text: 'Contact us',
+                dark: true,
+                buttonLink: '[contactUs]'
             } %}
-          </div>
+            <div class="btn_secondary">
+                {% include '../../../components/elements/Button/template.twig' with {
+                    text: 'Order Publication',
+                    icon: true,
+                    downloadBtn: true,
+                    buttonLink: '[orderPublication]'
+                } %}
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>

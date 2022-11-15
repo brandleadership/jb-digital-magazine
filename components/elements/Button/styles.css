@@ -49,6 +49,10 @@
     box-sizing: border-box;
 }
 
+.downloadBtn svg {
+    margin-left: 10px;
+}
+
 .downloadBtn svg path:first-child,
 .downloadBtn svg path:nth-child(2),
 .downloadBtn svg path:last-child {
@@ -174,8 +178,17 @@
 
 .buttonDark svg path:first-child,
 .buttonDark svg path:nth-child(2),
-.buttonDark svg path:last-child {
+.buttonDark svg.link-icon path:last-child {
     stroke: white;
+}
+
+.buttonDark svg.download-icon path:last-child {
+    fill: white;
+}
+
+.downloadBtn svg.download-icon path:last-child {
+    fill: var(--royalblue);
+    stroke: transparent;
 }
 
 .buttonDark:hover svg path:first-child,
@@ -185,22 +198,24 @@
 }
 
 .buttonDark:hover svg.download-icon path:last-child {
-    fill: white !important;
+    fill: var(--royalblue) !important;
     stroke: transparent !important;
 }
 
-@media only screen and (max-width: 1023px) {
-    /* .button {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: unset;
-    min-width: unset;
-    background-color: unset;
-    padding: unset;
-    display: block;
-    width: 100%;
-  } */
+.buttonDark:hover a svg path:first-child,
+.buttonDark:hover a svg path:nth-child(2),
+.buttonDark:hover a svg path:last-child {
+    stroke: white;
+    transition: stroke 0.2s, fill 0.2;
+    transition-timing-function: ease-in;
+}
 
+.buttonDark:hover a svg.download-icon path:last-child {
+    stroke: transparent;
+    fill: white;
+}
+
+@media only screen and (max-width: 1023px) {
     .button .buttonText {
         width: 100%;
     }
@@ -227,4 +242,22 @@
         margin-top: 12px;
         margin-left: 0;
     }
+}
+
+/* BSI Styles */
+
+.download-btn svg.download-icon {
+    display: block;
+}
+
+.download-btn svg.link-icon {
+    display: none;
+}
+
+.link-btn svg.download-icon {
+    display: none;
+}
+
+.link-btn svg.link-icon {
+    display: block;
 }
