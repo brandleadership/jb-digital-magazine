@@ -1,27 +1,31 @@
- <section class="detailpagehero_section" id="top" data-bsi-element="detailhero">
-      <div class="detailpagehero_blueCanvas">
+<section class="detailpagehero_section" id="top" data-bsi-element="detailhero">
+    <div class="detailpagehero_blueCanvas">
         <div class="detailpagehero_content">
-          <div class="detailpagehero_text" data-bsi-element-part="formatted-text">
-            <p>How to invest</p>
-          </div>
-          <div class="detailpagehero_chapter">
-            {% include '../../elements/chapter/template.twig' with {
-                chapter: "Chapter 1"
-              } %}
-          </div>
-          <div class="detailpagehero_subtitle">
-            {% include '../../elements/subtitle/template.twig' with {
-                subtitle: "Considerations"
-              } %}
-          </div>
-          <div class="detailpagehero_textBox">
-              {% include '../../elements/text/template.twig' with {
-                text: "What are common questions that investors ask?"
-              } %}
-          </div>
+            <div class="detailpagehero_text"
+                data-bsi-element-part="formatted-text">
+                <p>
+                    How to invest
+                </p>
+            </div>
+            <div class="detailpagehero_chapter">
+                {% include '../../elements/chapter/template.twig' with {
+                    chapter: 'Chapter 1'
+                } %}
+            </div>
+            <div class="detailpagehero_subtitle">
+                {% include '../../elements/subtitle/template.twig' with {
+                    subtitle: 'Considerations this year'
+                } %}
+            </div>
+            <div class="detailpagehero_textBox">
+                {% include '../../elements/text/template.twig' with {
+                    text: 'What are common questions that investors ask?'
+                } %}
+            </div>
         </div>
-      </div>
-      <div class="detailpagehero_image">
-        <img data-bsi-element-part="image" src="{{ bsi_cx_asset('./detailpage_hero.jpg') }}" />
-      </div>
-    </section>
+    </div>
+    <div class="detailpagehero_image">
+        <img data-bsi-element-part="image"
+            src="{{ bsi_cx_asset('./detailpage_hero.jpg') }}" />
+    </div>
+</section>

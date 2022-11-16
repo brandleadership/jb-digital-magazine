@@ -92,6 +92,25 @@
         padding: unset;
     }
 
+    .header_button .buttonDark {
+        border: 1px solid transparent;
+        transition: none;
+    }
+
+    .header_button .buttonDark:hover {
+        transition: none;
+        border: 1px solid transparent;
+    }
+
+    .header_button .buttonDark svg.link-icon path:last-child {
+        stroke: var(--royalblue);
+    }
+
+    .header_button .buttonDark svg.download-icon path:last-child {
+        fill: var(--royalblue);
+        stroke: transparent;
+    }
+
     .header_logo {
         margin: unset;
     }
@@ -112,7 +131,7 @@
     .header_button,
     .header_buttonDark {
         margin-right: 64px;
-        opacity: 0;
+        /* opacity: 0; */
     }
 
     .header_backArrow p {
@@ -133,7 +152,7 @@
     .header_button,
     .header_buttonDark {
         margin-right: 40px;
-        opacity: 0;
+        /* opacity: 0; */
     }
 }
 
