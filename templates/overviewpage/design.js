@@ -15,6 +15,7 @@ module.exports = cx.design
             .withContentElements(
                 require('../../components/sections/OverviewPageHero'),
                 require('../../components/sections/Introduction'),
+                require('../../components/sections/TextBlock'),
                 require('../../components/sections/SliderSection'),
                 require('../../components/sections/GlossarySection'),
                 require('../../components/sections/Interviews'),
