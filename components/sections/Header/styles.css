@@ -1,6 +1,6 @@
 .header_section {
     max-width: 100vw;
-    padding: 28px 0;
+    padding: 28px 40px;
     display: flex;
     position: sticky;
     top: 0;
@@ -9,8 +9,17 @@
     justify-content: space-between;
 }
 
+.header_backlink {
+    display: flex;
+}
+
+.header_backlink,
+.header_logo,
+.header_button {
+    width: calc((100vw - 80px) / 3);
+}
+
 .header_backArrow {
-    margin-left: 40px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -34,21 +43,18 @@
 }
 
 .header_logo {
-    margin: auto auto auto calc(50vw - 350px);
-    width: 200px;
     display: flex;
-    /* justify-content: center; */
-}
-
-@media only screen and (min-width: 1930px) {
-    .header_logo {
-        margin-left: calc(50% - 420px);
-    }
+    justify-content: center;
+    align-items: center;
 }
 
 .header_menu {
-    margin-right: 40px;
     opacity: 0;
+}
+
+.header_button {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header_scrollBarWrapper {
@@ -56,27 +62,6 @@
     width: 100%;
     top: 0;
     height: 3px;
-}
-
-.header_button {
-    margin-right: 40px;
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
-    .header_linkBack {
-        display: none;
-    }
-
-    .header_button {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .header_backArrow {
-        margin-left: 40px;
-        width: unset;
-    }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -116,7 +101,7 @@
     }
 
     .header_section {
-        padding: 22px 0;
+        padding: 22px 16px;
     }
 
     .header_menu {
@@ -128,35 +113,32 @@
         display: none;
     }
 
-    .header_button,
-    .header_buttonDark {
-        margin-right: 64px;
-        /* opacity: 0; */
-    }
-
     .header_backArrow p {
         display: none;
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .header_backArrow {
+        width: unset;
+    }
+
+    .header_section {
+        padding: 22px 40px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .header_backArrow {
-        margin-left: 16px;
         width: unset;
     }
 
     .header_backArrow p {
         display: none;
     }
-
-    .header_button,
-    .header_buttonDark {
-        margin-right: 40px;
-        /* opacity: 0; */
-    }
 }
 
-/* animation Header */
+/* Animation for Header */
 
 @keyframes fadeInDown {
     from {
@@ -177,10 +159,10 @@
 
 /* BSI Styles */
 
-.show-btn .header_button {
-    display: block;
+.show-btn .header_button a {
+    visibility: inherit;
 }
 
-.hide-btn .header_button {
-    display: none;
+.hide-btn .header_button a {
+    visibility: hidden;
 }
