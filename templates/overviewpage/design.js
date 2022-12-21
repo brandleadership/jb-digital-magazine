@@ -30,6 +30,7 @@ module.exports = cx.design
                 require('../../components/elements/Lead'),
                 require('../../components/elements/Card'),
                 require('../../components/elements/Definition'),
-                require('../../components/elements/InterviewTeaser')
+                require('../../components/elements/InterviewTeaser'),
+                require('../../components/elements/Spacer')
             )
     );

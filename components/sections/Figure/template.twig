@@ -1,4 +1,7 @@
 <section class="figure_section" data-bsi-element="figure">
+    <div data-bsi-dropzone="figure-spacer-top">
+        {% include '../../elements/Spacer/template.twig' %}
+    </div>
     <figure>
         {% include '../../elements/Subheading/template.twig' with {
             subheading: 'Figure Title'
@@ -12,4 +15,7 @@
             More Details about the Image
         </figcaption>
     </figure>
+    <div data-bsi-dropzone="figure-spacer-bottom">
+        {% include '../../elements/Spacer/template.twig' %}
+    </div>
 </section>

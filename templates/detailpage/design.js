@@ -31,5 +31,8 @@ module.exports = cx.design
         cx.contentElementGroup
             .withGroupId('elements')
             .withLabel('Elements')
-            .withContentElements(require('../../components/elements/Lead'))
+            .withContentElements(
+                require('../../components/elements/Lead'),
+                require('../../components/elements/Spacer')
+            )
     );

@@ -6,12 +6,6 @@
     margin: auto;
 }
 
-figure {
-    /* max-width: var(--wide);
-    margin: auto; */
-    margin: 80px 0;
-}
-
 .figure_section figcaption {
     margin-top: 20px;
 }

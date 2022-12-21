@@ -21,7 +21,7 @@
     justify-content: center;
     padding-left: 90px;
     flex-direction: column;
-    margin-bottom: 330px;
+    margin-bottom: 220px;
 }
 
 .detailpagehero_content {
@@ -189,7 +189,7 @@
     .detailpagehero_blueCanvas {
         width: var(--textWidthTablet);
         height: 380px;
-        margin-bottom: 180px;
+        margin-bottom: 120px;
     }
 
     .detailpagehero_chapter {

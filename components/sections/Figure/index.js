@@ -14,4 +14,12 @@ module.exports = cx.contentElement
         cx.part.formattedText
             .withLabel('Image Description')
             .withHtmlEditorConfig(require('../../../configs/full'))
+    )
+    .withDropzones(
+        cx.dropzone
+            .withDropzone('figure-spacer-top')
+            .withAllowedElements(require('../../elements/Spacer')),
+        cx.dropzone
+            .withDropzone('figure-spacer-bottom')
+            .withAllowedElements(require('../../elements/Spacer'))
     );

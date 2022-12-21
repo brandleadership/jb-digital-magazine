@@ -1,4 +1,7 @@
 <div class="textblock_section" data-bsi-element="textblock">
+    <div data-bsi-dropzone="textblock-spacer-top">
+        {% include '../../elements/Spacer/template.twig' %}
+    </div>
     {% include '../../elements/Subheading/template.twig' with {
         subheading: 'Subheading'
     } %}
@@ -19,5 +22,8 @@
                 </li>
             </ul>
         </p>
+    </div>
+    <div data-bsi-dropzone="textblock-spacer-bottom">
+        {% include '../../elements/Spacer/template.twig' %}
     </div>
 </div>
