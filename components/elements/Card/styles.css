@@ -120,6 +120,7 @@
 
     .card-inner-wrapper {
         background-size: cover;
+        width: 100%;
     }
 
     .cardLink {
