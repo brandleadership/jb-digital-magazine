@@ -1,32 +1,35 @@
 <div data-bsi-element="card"
     id="{{ cardID }}"
     data-bsi-hide-remove-button=""
-    class="card"
-    data-bsi-element-part="background-image"
-    style="background-image: url('{{
-    backgroundImage
-        ?? bsi_cx_asset('./image_teaser_theory.jpg')
-    }}');">
-    <a data-bsi-element-part="link"
-        class="cardLink"
-        href="{{ link ?? '[cardlink|url=https://example.com]' }}"
-        target="{{ newTab ? '_blank' : '_self' }}"
-        data-bsi-link-fixed-inner-html="">
-        {% include '../../elements/Chapter/template.twig' with {
-            chapter: 'Chapter 1'
-        } %}
-        <div class="contentWrapper">
-            {% include '../../elements/TeaserTitle/template.twig' with {
-                subtitle: 'Subtitle'
+    class="card slider_carousel__slide">
+    <div class="card-inner-wrapper"
+        data-bsi-element-part="background-image"
+        style="background-image: url('{{
+        backgroundImage
+            ?? bsi_cx_asset('./image_teaser_theory.jpg')
+        }}');">
+        <a data-bsi-element-part="link"
+            class="cardLink"
+            href="{{ link ?? '[cardlink|url=https://example.com]' }}"
+            target="{{ newTab ? '_blank' : '_self' }}"
+            data-bsi-link-fixed-inner-html="">
+            {% include '../../elements/Chapter/template.twig' with {
+                chapter: 'Chapter 1'
             } %}
-            {% include '../../elements/TeaserText/template.twig' with {
-                text: 'Example Text'
-            } %}
-            <div class="card_button">
-                <p class="card_buttonText" data-bsi-element-part="plain-text">
-                    {{ buttonText ?? 'Start Reading' }}
-                </p>
+            <div class="contentWrapper">
+                {% include '../../elements/TeaserTitle/template.twig' with {
+                    subtitle: 'Subtitle'
+                } %}
+                {% include '../../elements/TeaserText/template.twig' with {
+                    text: 'Example Text'
+                } %}
+                <div class="card_button">
+                    <p class="card_buttonText"
+                        data-bsi-element-part="plain-text">
+                        {{ buttonText ?? 'Start Reading' }}
+                    </p>
+                </div>
             </div>
-        </div>
-    </a>
+        </a>
+    </div>
 </div>

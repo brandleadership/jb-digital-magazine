@@ -1,6 +1,22 @@
 .card {
     width: 492px;
     height: 628px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition-delay: 50ms;
+}
+
+.card:hover {
+    background-size: 105%;
+}
+
+.card-inner-wrapper {
+    width: 492px;
+    height: 628px;
+    padding-right: 40px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -13,10 +29,9 @@
     transition-delay: 50ms;
 }
 
-.card:hover {
+.card .card-inner-wrapper:hover {
     background-size: 105%;
 }
-
 .cardLink {
     height: 100%;
     padding: 40px;
@@ -47,12 +62,13 @@
     transition: transform 250ms ease-out;
 }
 
-.card:hover .contentWrapper {
+.card .card-inner-wrapper::hover .contentWrapper {
     transform: translateY(-10px);
 }
 
 .card_button {
     background-color: white;
+    border: 1px solid white;
     padding: 17px 40px;
     max-width: fit-content;
     text-decoration: none;
@@ -61,6 +77,8 @@
     align-items: center;
     justify-content: space-between;
     min-width: 120px;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+    transition-timing-function: ease-out;
 }
 
 .card_button .card_buttonText {
@@ -75,10 +93,22 @@
     margin: 0px;
     min-width: 120px;
     width: max-content;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+    transition-timing-function: ease-out;
 }
 
 .card_button .card_buttonText p {
     color: var(--royalblue);
+}
+
+.card .cardLink:hover .card_button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.card .cardLink:hover .card_button .card_buttonText {
+    color: white;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -86,6 +116,10 @@
         background-size: cover;
         width: 320px;
         height: 380px;
+    }
+
+    .card-inner-wrapper {
+        background-size: cover;
     }
 
     .cardLink {

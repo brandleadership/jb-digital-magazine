@@ -140,7 +140,7 @@
 }
 
 .glossaryslider_carousel__viewport li:nth-child(1) {
-    margin-left: 75vw;
+    margin-left: 30vw;
 }
 
 .glossaryslider_carousel__slide {
@@ -165,16 +165,16 @@
     color: #fff;
     font-size: 2em;
 }
-
+/* 
 .glossaryslider_carousel__snapper {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     scroll-snap-align: center;
-}
+} */
 
-@media (hover: hover) {
+/* @media (hover: hover) {
     .glossaryslider_carousel__snapper {
         animation-name: snap;
         animation-timing-function: ease;
@@ -186,18 +186,18 @@
         .glossaryslider_carousel__snapper {
         animation-name: snap;
     }
-}
+} */
 
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
     .glossaryslider_carousel__snapper {
         animation-name: none;
     }
-}
-
+} */
+/* 
 .glossaryslider_carousel:hover .glossaryslider_carousel__snapper,
 .glossaryslider_carousel:focus-within .glossaryslider_carousel__snapper {
     animation-name: none;
-}
+} */
 
 .glossaryslider_carousel__navigation {
     position: absolute;
