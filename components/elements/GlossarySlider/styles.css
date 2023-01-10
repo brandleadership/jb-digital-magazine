@@ -67,13 +67,13 @@
     padding-left: 850px;
 }
 
+.bsi-ce-edit-mode .glossaryslider_slider *::-webkit-scrollbar-thumb {
+    background: black;
+}
+
 .glossaryslider_slider *::-webkit-scrollbar-thumb {
     background: transparent;
     border: none;
-}
-
-.bsi-ce-edit-mode .glossaryslider_slider *::-webkit-scrollbar-thumb {
-    background: black;
 }
 
 .glossaryslider_slider {
@@ -131,7 +131,10 @@
     overflow-y: hidden;
 }
 
-.glossaryslider_carousel__viewport li:nth-child(even) > div > div > div {
+.glossaryslider_carousel__viewport
+    .glossaryslider_carousel__slide:nth-child(even)
+    > div
+    > div {
     justify-content: end;
 }
 
@@ -139,7 +142,8 @@
     top: calc((1000px - 628px) / 2);
 }
 
-.glossaryslider_carousel__viewport li:nth-child(1) {
+.glossaryslider_carousel__viewport
+    .glossaryslider_carousel__slide:nth-child(1) {
     margin-left: 30vw;
 }
 
@@ -165,7 +169,7 @@
     color: #fff;
     font-size: 2em;
 }
-/* 
+/*
 .glossaryslider_carousel__snapper {
     position: absolute;
     top: 0;
@@ -193,7 +197,7 @@
         animation-name: none;
     }
 } */
-/* 
+/*
 .glossaryslider_carousel:hover .glossaryslider_carousel__snapper,
 .glossaryslider_carousel:focus-within .glossaryslider_carousel__snapper {
     animation-name: none;
@@ -302,14 +306,15 @@
         overflow-y: hidden;
     }
 
-    .glossaryslider_carousel__viewport li:nth-child(1) {
+    .glossaryslider_carousel__viewport
+        .glossaryslider_carousel__slide:nth-child(1) {
         margin-left: 16px;
     }
 
     /* .glossaryslider_carousel__navigation {
       display: inline-block;
     }
-  
+
     .glossaryslider_carousel__navigation {
       position: absolute;
       right: 0;
@@ -344,18 +349,19 @@
         overflow-y: hidden;
     }
 
-    .glossaryslider_carousel__viewport li:nth-child(1) {
+    .glossaryslider_carousel__viewport
+        .glossaryslider_carousel__slide:nth-child(1) {
         margin-left: 90px;
     }
 
-    .glossaryslider_carousel__viewport li {
+    .glossaryslider_carousel__viewport .glossaryslider_carousel__slide {
         margin-right: 38px;
     }
 
     /* .glossaryslider_carousel__navigation {
       display: inline-block;
     }
-  
+
     .glossaryslider_carousel__navigation {
       position: absolute;
       right: 0;

@@ -136,12 +136,6 @@ p {
     border-right: 20px solid white;
 }
 
-.white-bg div::-webkit-scrollbar-thumb {
-    background: black;
-    border-left: 220px solid white;
-    border-right: 20px solid white;
-}
-
 .blue-bg div::-webkit-scrollbar {
     border-left: 220px solid var(--royalblue);
     border-right: 20px solid var(--royalblue);
@@ -163,8 +157,8 @@ p {
     stroke: black;
 }
 
-/* 
-BSI Editor specific styles 
+/*
+BSI Editor specific styles
 */
 
 .bsi-ce-edit-mode #definition-section {

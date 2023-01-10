@@ -16,6 +16,10 @@
     height: 100%;
     object-fit: cover;
 }
+figcaption a,
+figcaption p a {
+    color: var(--reflexblue);
+}
 
 @media only screen and (max-width: 767px) {
     .figure_section {
