@@ -85,6 +85,13 @@
     .introduction_cardWrapper > div {
         width: 100%;
     }
+    .introduction_cardWrapper .card-inner-wrapper {
+        width: 100%;
+    }
+
+    .introduction_cardWrapper .card {
+        padding-right: 0;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {

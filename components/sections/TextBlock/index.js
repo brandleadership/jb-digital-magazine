@@ -13,4 +13,12 @@ module.exports = cx.contentElement
         cx.part.formattedText
             .withLabel('Text Editor')
             .withHtmlEditorConfig(require('../../../configs/full'))
+    )
+    .withDropzones(
+        cx.dropzone
+            .withDropzone('textblock-spacer-top')
+            .withAllowedElements(require('../../elements/Spacer')),
+        cx.dropzone
+            .withDropzone('textblock-spacer-bottom')
+            .withAllowedElements(require('../../elements/Spacer'))
     );

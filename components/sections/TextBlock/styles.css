@@ -1,6 +1,6 @@
 .textblock_section {
     max-width: var(--normalWidthText);
-    margin: 96px auto 120px;
+    margin: 16px auto 40px;
 }
 
 .textblock_section h4 {
@@ -18,7 +18,7 @@
 
 @media only screen and (max-width: 767px) {
     .textblock_section {
-        margin: 60px auto;
+        margin: 0 auto;
         max-width: var(--contentWidthMobile);
     }
 

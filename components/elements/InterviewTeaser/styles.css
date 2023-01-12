@@ -35,6 +35,10 @@
     margin: 24px 0;
 }
 
+.interviewteaser_quote * {
+    display: inline;
+}
+
 .interviewteaser_teaser .interviewteaser_author {
     font-size: 14px;
     line-height: 130%;

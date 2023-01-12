@@ -24,6 +24,7 @@
 @import '../../../components/elements/Subtitle/styles.css';
 @import '../../../components/elements/Subheading/styles.css';
 @import '../../../components/elements/Text/styles.css';
+@import '../../../components/elements/Spacer/styles.css';
 
 :root {
     --royalblue: #141e55;
@@ -136,12 +137,6 @@ p a {
     border-right: 20px solid white;
 }
 
-.white-bg div::-webkit-scrollbar-thumb {
-    background: black;
-    border-left: 220px solid white;
-    border-right: 20px solid white;
-}
-
 .blue-bg div::-webkit-scrollbar {
     border-left: 220px solid var(--royalblue);
     border-right: 20px solid var(--royalblue);
@@ -163,8 +158,8 @@ p a {
     stroke: black;
 }
 
-/* 
-BSI Editor specific styles 
+/*
+BSI Editor specific styles
 */
 
 .bsi-ce-edit-mode #definition-section {

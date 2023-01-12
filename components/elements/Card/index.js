@@ -10,9 +10,7 @@ module.exports = cx.contentElement
         cx.part.backgroundImage.withLabel('Background Image'),
         cx.part.link.withLabel('Card Link'),
         cx.part.plainText.withLabel('Subheading'),
-        cx.part.formattedText
-            .withLabel('Card Title')
-            .withHtmlEditorConfig(require('../../../configs/full')),
+        cx.part.plainText.withLabel('Card Title'),
         cx.part.formattedText
             .withLabel('Card Text')
             .withHtmlEditorConfig(require('../../../configs/full')),
