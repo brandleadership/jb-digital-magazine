@@ -7,6 +7,7 @@ module.exports = cx.design
     .withAuthor('gateB')
     .withDate('10.11.2022')
     .withDefaultLocale(Locale.EN)
+    .withPreviewImage('static/preview.png')
     .withLocales(Locale.EN, Locale.DE)
     .withContentElementGroups(
         cx.contentElementGroup

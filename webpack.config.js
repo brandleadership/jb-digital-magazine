@@ -16,7 +16,16 @@ module.exports = WebpackConfigBuilder.fromConfigs(
         .withTargetVersion(Version.CX_22_0)
         .withRootPath(path.resolve(__dirname, 'templates', 'detailpage'))
         .withPropertiesFilePath('properties.js')
-        .withModules(new ModuleConfig().withName('main').withPath('main.js')),
+        .withModules(new ModuleConfig().withName('main').withPath('main.js'))
+        .withAdditionalFilesToCopy({
+            from: path.resolve(
+                __dirname,
+                'templates',
+                'detailpage',
+                'preview.png'
+            ),
+            to: 'static/preview.png',
+        }),
     new BuildConfig()
         .withName('overviewpage')
         .withVersion('2.0.0')
@@ -25,4 +34,13 @@ module.exports = WebpackConfigBuilder.fromConfigs(
         .withRootPath(path.resolve(__dirname, 'templates', 'overviewpage'))
         .withPropertiesFilePath('properties.js')
         .withModules(new ModuleConfig().withName('main').withPath('main.js'))
+        .withAdditionalFilesToCopy({
+            from: path.resolve(
+                __dirname,
+                'templates',
+                'overviewpage',
+                'preview.png'
+            ),
+            to: 'static/preview.png',
+        })
 );
