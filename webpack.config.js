@@ -42,5 +42,22 @@ module.exports = WebpackConfigBuilder.fromConfigs(
                 'preview.png'
             ),
             to: 'static/preview.png',
+        }),
+    new BuildConfig()
+        .withName('combined')
+        .withVersion('2.0.0')
+        .withDesignType(DesignType.LANDINGPAGE)
+        .withTargetVersion(Version.CX_22_0)
+        .withRootPath(path.resolve(__dirname, 'templates', 'combined'))
+        .withPropertiesFilePath('properties.js')
+        .withModules(new ModuleConfig().withName('main').withPath('main.js'))
+        .withAdditionalFilesToCopy({
+            from: path.resolve(
+                __dirname,
+                'templates',
+                'combined',
+                'preview.png'
+            ),
+            to: 'static/preview.png',
         })
 );
