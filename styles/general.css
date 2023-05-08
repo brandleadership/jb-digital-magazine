@@ -15,19 +15,19 @@
 
 @font-face {
     font-family: 'VerlagSSm';
-    src: url('../../../assets/fonts/VerlagSSm-Book.woff2') format('woff2');
+    src: url('../assets/fonts/VerlagSSm-Book.woff2') format('woff2');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'VerlagSSm';
-    src: url('../../../assets/fonts/VerlagSSm-Light.woff2') format('woff2');
+    src: url('../assets/fonts/VerlagSSm-Light.woff2') format('woff2');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'VerlagSSm';
-    src: url('../../../assets/fonts/VerlagSSm-ExtraLight.woff2') format('woff2');
+    src: url('../assets/fonts/VerlagSSm-ExtraLight.woff2') format('woff2');
     font-weight: 200;
 }
 
