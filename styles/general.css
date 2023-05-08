@@ -1,31 +1,3 @@
-/* Sections */
-@import '../../../components/sections/DetailPageHero/styles.css';
-@import '../../../components/sections/Header/styles.css';
-
-@import '../../../components/elements/Lead/styles.css';
-@import '../../../components/sections/TextBlock/styles.css';
-@import '../../../components/sections/InterviewBlock/styles.css';
-@import '../../../components/sections/Subheading/styles.css';
-@import '../../../components/sections/Box/styles.css';
-@import '../../../components/sections/CaseBlock/styles.css';
-@import '../../../components/sections/BackToTop/styles.css';
-@import '../../../components/sections/Figure/styles.css';
-@import '../../../components/sections/Quote/styles.css';
-@import '../../../components/sections/ArticleTeaser/styles.css';
-@import '../../../components/sections/BackToTop/styles.css';
-@import '../../../components/sections/Contact/styles.css';
-@import '../../../components/sections/Footer/styles.css';
-
-/* Elements */
-@import '../../../components/elements/Button/styles.css';
-@import '../../../components/elements/Chapter/styles.css';
-@import '../../../components/elements/Title/styles.css';
-@import '../../../components/elements/TeaserTitle/styles.css';
-@import '../../../components/elements/Subtitle/styles.css';
-@import '../../../components/elements/Subheading/styles.css';
-@import '../../../components/elements/Text/styles.css';
-@import '../../../components/elements/Spacer/styles.css';
-
 :root {
     --royalblue: #141e55;
     --reflexblue: #001489;
@@ -80,6 +52,10 @@ main {
 
 p {
     margin: 0;
+}
+
+p a {
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 1930px) {
