@@ -32,7 +32,8 @@ module.exports = cx.design
                 require('../../components/sections/ArticleTeaser'),
                 require('../../components/sections/BackToTop'),
                 require('../../components/sections/Contact'),
-                require('../../components/sections/Footer')
+                require('../../components/sections/Footer'),
+                require('@bsi-cx/jb_landingpage/components/elements/embed-video')
             ),
         cx.contentElementGroup
             .withGroupId('elements')
