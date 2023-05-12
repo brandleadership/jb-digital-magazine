@@ -393,6 +393,10 @@ button {
     content: '\f110';
 }
 
+.text-shown .three-row-text {
+    display: block;
+}
+
 .vjs-icon-circle,
 .video-js .vjs-play-progress,
 .video-js .vjs-volume-level,
