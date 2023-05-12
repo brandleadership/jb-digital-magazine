@@ -36,8 +36,6 @@ button {
     font-style: normal;
 } */
 
-
-
 .page-template {
     display: flex;
     justify-content: flex-end;
@@ -77,9 +75,7 @@ button {
     }
 }
 
-.page-template--has-sticky-alert.page-template:not(
-        .page-template--campaign-hub
-    ):not(.template-home-page):not(.template-moment-page) {
+.page-template--has-sticky-alert.page-template:not(.page-template--campaign-hub):not(.template-home-page):not(.template-moment-page) {
     padding-top: 212px !important;
 }
 .page-template--has-sticky-alert .megamenu {
@@ -395,6 +391,11 @@ button {
 
 .text-shown .three-row-text {
     display: block;
+}
+
+.article-image-container img {
+    width: 100%;
+    height: 100%;
 }
 
 .vjs-icon-circle,
@@ -5073,7 +5074,6 @@ body {
         order: 1;
     }
 }
-
 
 input[type='email'].error,
 input[type='text'].error {
@@ -17513,9 +17513,7 @@ select[data-ss-uuid] {
     transform: translateY(0);
     transition: transform 0.7s ease-in-out 0s;
 }
-.o-language-alert:not(.o-language-alert--visible):not(
-        .o-language-alert--js-disabled
-    ) {
+.o-language-alert:not(.o-language-alert--visible):not(.o-language-alert--js-disabled) {
     transform: translateY(-120px);
     transition: transform 0.2s linear;
 }
@@ -24127,4 +24125,3 @@ section.disclaimer__section
 li {
     list-style-type: none;
 }
-
