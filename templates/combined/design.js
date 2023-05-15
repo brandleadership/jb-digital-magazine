@@ -39,12 +39,13 @@ module.exports = cx.design
                 require('@bsi-cx/jb_landingpage/components/elements/download-item'),
                 require('@bsi-cx/jb_landingpage/components/elements/links-group'),
                 require('@bsi-cx/jb_landingpage/components/elements/links-group-item'),
-                require('@bsi-cx/jb_landingpage/components/elements/podcast-audio'),
                 require('@bsi-cx/jb_landingpage/components/elements/rectangle-with-buttons'),
                 require('@bsi-cx/jb_landingpage/components/elements/podcast-audio'),
                 require('@bsi-cx/jb_landingpage/components/related-articles/articles-1-column-wide'),
                 require('@bsi-cx/jb_landingpage/components/related-articles/articles-2-columns'),
-                require('@bsi-cx/jb_landingpage/components/related-articles/articles-content')
+                require('@bsi-cx/jb_landingpage/components/related-articles/articles-content'),
+                require('@bsi-cx/jb_landingpage/components/related-articles/articles-title'),
+                require('@bsi-cx/jb_landingpage/components/elements/links-group-title')
             ),
         cx.contentElementGroup
             .withGroupId('elements')

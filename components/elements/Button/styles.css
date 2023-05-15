@@ -1,6 +1,6 @@
 /* Default Button (white) */
 
-.button {
+.button-digital {
     background-color: white;
     border: 1px solid white;
     padding: 17px 32px;
@@ -17,7 +17,7 @@
     transition-timing-function: ease-out;
 }
 
-.button:hover {
+.button-digital:hover {
     background-color: transparent;
     border: 1px solid white;
     color: white;
@@ -25,7 +25,7 @@
     transition-timing-function: ease-out;
 }
 
-.button:hover p {
+.button-digital:hover p {
     color: white;
 }
 
@@ -93,11 +93,11 @@
     margin-left: 5px;
 }
 
-.button .buttonText {
+.button-digital .buttonText {
     color: var(--royalblue);
 }
 
-.button .buttonText p {
+.button-digital .buttonText p {
     color: var(--royalblue);
 }
 
@@ -157,22 +157,22 @@
     font-weight: 600;
 }
 
-.button svg,
+.button-digital svg,
 .buttonDark svg,
 .downloadBtn {
     margin-left: 10px;
 }
 
-.button svg path:first-child,
-.button svg path:nth-child(2) {
+.button-digital svg path:first-child,
+.button-digital svg path:nth-child(2) {
     stroke: var(--royalblue);
 }
 
-.button svg.download-icon path:last-child {
+.button-digital svg.download-icon path:last-child {
     fill: var(--royalblue);
 }
 
-.button svg.link-icon path:last-child {
+.button-digital svg.link-icon path:last-child {
     stroke: var(--royalblue);
 }
 
@@ -216,16 +216,16 @@
 }
 
 @media only screen and (max-width: 1023px) {
-    .button .buttonText {
+    .button-digital .buttonText {
         width: 100%;
     }
 
-    .button svg path:first-child,
-    .button svg path:nth-child(2) {
+    .button-digital svg path:first-child,
+    .button-digital svg path:nth-child(2) {
         stroke: white;
     }
 
-    .button svg path:last-child {
+    .button-digital svg path:last-child {
         fill: white;
     }
 
