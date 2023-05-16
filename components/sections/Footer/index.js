@@ -43,15 +43,10 @@ module.exports = cx.contentElement
         cx.part.plainText
             .withId('a9193fda-5f84-11ed-9b6a-0242ac120002')
             .withLabel('Copyright Text'),
-        cx.part.plainText
-            .withId('fcda9f56-f3b8-11ed-a05b-0242ac120003')
-            .withLabel('Agree Text'),
-        cx.part.link
+        cx.part.formattedText
             .withId('a9193e2c-5f84-11ed-9b6a-0242ac120002')
-            .withLabel('Terms of Use'),
-        cx.part.link
-            .withId('a9193be8-5f84-11ed-9b6a-0242ac120002')
-            .withLabel('Data Privacy Policy'),
+            .withLabel('Disclaimer')
+            .withHtmlEditorConfig(require('../../../configs/full')),
         cx.part.link
             .withId('a9193ad0-5f84-11ed-9b6a-0242ac120002')
             .withLabel('Back to top')
