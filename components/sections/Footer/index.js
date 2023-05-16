@@ -45,7 +45,7 @@ module.exports = cx.contentElement
             .withLabel('Copyright Text'),
         cx.part.formattedText
             .withId('a9193e2c-5f84-11ed-9b6a-0242ac120002')
-            .withLabel('Disclaimer')
+            .withLabel('Terms and Conditions Text')
             .withHtmlEditorConfig(require('../../../configs/full')),
         cx.part.link
             .withId('a9193ad0-5f84-11ed-9b6a-0242ac120002')
