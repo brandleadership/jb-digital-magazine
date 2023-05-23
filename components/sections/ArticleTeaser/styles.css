@@ -56,6 +56,10 @@
     color: white;
 }
 
+.articleteaser_textBox .text {
+    color: white;
+}
+
 .articleteaser_textBox {
     margin-bottom: 30px;
     max-width: 350px;
