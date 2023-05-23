@@ -1,16 +1,16 @@
 .subheading_section {
-  max-width: 680px;
-  margin: auto;
-  display: block;
-  width: 100%;
+    max-width: 680px;
+    margin: auto;
+    display: block;
+    width: 100%;
 }
 
 .subheading {
-  display: block;
+    display: block;
 }
 
 @media only screen and (max-width: 1023px) {
-  .subheading_section {
-    max-width: var(--contentWidthMobile);
-  }
+    .subheading_section {
+        max-width: var(--contentWidthMobile);
+    }
 }
