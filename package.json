@@ -29,12 +29,10 @@
     ],
     "homepage": "https://github.com/bsi-software/bsi-cx-scaffold-design#readme",
     "devDependencies": {
-        "@bsi-cx/design-build": "github:bsi-software/bsi-cx-design-build#semver:^1.8.0",
-        "@bsi-cx/design-standard-library": "github:bsi-software/bsi-cx-design-standard-library-web#semver:1.0.0"
+        "@bsi-cx/design-build": "^1.12.2-rc.1"
     },
     "dependencies": {
-        "@bsi-cx/jb_landingpage": "github:brandleadership/jb_landingpage#create-npm-package",
-        "@bsi-cx/design-standard-library-web": "github:bsi-software/bsi-cx-design-standard-library-web#semver:1.2.0",
+        "@brandleadership/jb_landingpage": "github:brandleadership/jb_landingpage#create-npm-package",
         "prettier-plugin-twig-melody": "^0.4.6"
     }
 }
