@@ -12,6 +12,10 @@
     content: '—   ';
 }
 
+.caseblock_section .text p {
+    color: black;
+}
+
 .caseblock_heading {
     display: flex;
     align-items: flex-end;
