@@ -32,7 +32,7 @@
         "@bsi-cx/design-build": "^1.12.2-rc.1"
     },
     "dependencies": {
-        "@brandleadership/jb_landingpage": "github:brandleadership/jb_landingpage#create-npm-package",
+        "@brandleadership/jb_landingpage": "brandleadership/jb_landingpage#create-npm-package",
         "prettier-plugin-twig-melody": "^0.4.6"
     }
 }
