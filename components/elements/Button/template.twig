@@ -1,4 +1,8 @@
-<a class="{{ dark ? 'buttonDark' : downloadBtn ? 'downloadBtn' : 'button' }}"
+<a class="{{
+    dark
+        ? 'buttonDark'
+        : downloadBtn ? 'downloadBtn' : 'button-digital'
+    }}"
     href="{{ buttonLink ? buttonLink : '[buttonlink]' }}"
     data-bsi-element-part="link">
     <p data-bsi-link-text-part="" class="buttonText">

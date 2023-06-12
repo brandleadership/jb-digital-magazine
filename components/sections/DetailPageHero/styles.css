@@ -28,6 +28,10 @@
     max-width: calc(100vw - 800px - 10vw);
 }
 
+.detailpagehero_textBox .text {
+    color: white;
+}
+
 .detailpagehero_image {
     max-width: 700px;
     height: auto;
@@ -207,6 +211,7 @@
 
     .detailpagehero_textBox div {
         font-size: 18px;
+        color: white;
     }
 }
 

@@ -1,0 +1,27 @@
+.podcast-audio-container {
+    max-width: var(--normalWidthText);
+}
+
+.component-content-video {
+    max-width: var(--normalWidthText);
+    margin: auto;
+}
+
+img {
+    width: unset;
+    height: unset;
+}
+
+.text p {
+    color: white;
+}
+
+p {
+    font-size: unset;
+    color: unset;
+    font-weight: unset;
+}
+.article-image-container img {
+    width: 100%;
+    height: 100%;
+}

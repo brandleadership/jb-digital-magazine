@@ -3,25 +3,15 @@
 {% block main %}
     {# Homepage Sections #}
     {% include '../../components/sections/OverviewPageHero/template.twig' %}
+    {% include '../../components/elements/Lead/template.twig' %}
+    {% include '@brandleadership/jb_landingpage/components/elements/iframe-video/template.twig' %}
     {% include '../../components/sections/Introduction/template.twig' %}
     {% include '../../components/sections/SliderSection/template.twig' %}
-    {% include '../../components/sections/GlossarySection/template.twig' %}
-    {% include '../../components/sections/Interviews/template.twig' %}
-    {% include '../../components/sections/Education/template.twig' %}
+    {% include '../../components/sections/SliderSection/template.twig' %}
+    {% include '@brandleadership/jb_landingpage/components/elements/rectangle-with-buttons/template.twig' %}
+    {% include '../../components/sections/SliderSection/template.twig' %}
+    {% include '../../components/sections/SliderSection/template.twig' %}
+    {% include '@brandleadership/jb_landingpage/components/related-articles/articles-2-columns/template.twig' %}
     {% include '../../components/sections/Contact/template.twig' %}
     {% include '../../components/sections/Footer/template.twig' %}
-
-    {# Detailpage Sections #}
-    {% include '../../components/sections/Header/template.twig' %}
-    {% include '../../components/sections/DetailPageHero/template.twig' %}
-    {% include '../../components/elements/Lead/template.twig' %}
-    {% include '../../components/sections/TextBlock/template.twig' %}
-    {% include '../../components/sections/Subheading/template.twig' %}
-    {% include '../../components/sections/Box/template.twig' %}
-    {% include '../../components/sections/CaseBlock/template.twig' %}
-    {% include '../../components/sections/Figure/template.twig' %}
-    {% include '../../components/sections/Quote/template.twig' %}
-    {% include '../../components/sections/InterviewBlock/template.twig' %}
-    {% include '../../components/sections/ArticleTeaser/template.twig' %}
-    {% include '../../components/sections/BackToTop/template.twig' %}
 {% endblock %}

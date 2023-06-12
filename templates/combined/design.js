@@ -32,7 +32,20 @@ module.exports = cx.design
                 require('../../components/sections/ArticleTeaser'),
                 require('../../components/sections/BackToTop'),
                 require('../../components/sections/Contact'),
-                require('../../components/sections/Footer')
+                require('../../components/sections/Footer'),
+                require('@brandleadership/jb_landingpage/components/elements/embed-video'),
+                require('@brandleadership/jb_landingpage/components/elements/iframe-video'),
+                require('@brandleadership/jb_landingpage/components/elements/downloads'),
+                require('@brandleadership/jb_landingpage/components/elements/download-item'),
+                require('@brandleadership/jb_landingpage/components/elements/links-group'),
+                require('@brandleadership/jb_landingpage/components/elements/links-group-item'),
+                require('@brandleadership/jb_landingpage/components/elements/rectangle-with-buttons'),
+                require('@brandleadership/jb_landingpage/components/elements/podcast-audio'),
+                require('@brandleadership/jb_landingpage/components/related-articles/articles-1-column-wide'),
+                require('@brandleadership/jb_landingpage/components/related-articles/articles-2-columns'),
+                require('@brandleadership/jb_landingpage/components/related-articles/articles-content'),
+                require('@brandleadership/jb_landingpage/components/related-articles/articles-title'),
+                require('@brandleadership/jb_landingpage/components/elements/links-group-title')
             ),
         cx.contentElementGroup
             .withGroupId('elements')

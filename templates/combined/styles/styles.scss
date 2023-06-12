@@ -1,4 +1,20 @@
 @import '../../../styles/general.css';
+@import '@brandleadership/jb_landingpage/styles/components.css';
+@import '@brandleadership/jb_landingpage/styles/general.css';
+@import './overwrite-imported-components.css';
+
+/* Imports from JB Design  */
+@import '@brandleadership/jb_landingpage/components/elements/iframe-video/styles.css';
+@import '@brandleadership/jb_landingpage/components/elements/downloads/styles.css';
+@import '@brandleadership/jb_landingpage/components/elements/download-item/styles.css';
+@import '@brandleadership/jb_landingpage/components/elements/links-group/styles.css';
+@import '@brandleadership/jb_landingpage/components/elements/links-group-item/styles.css';
+@import '@brandleadership/jb_landingpage/components/elements/podcast-audio/styles.css';
+@import '@brandleadership/jb_landingpage/components/elements/rectangle-with-buttons/styles.css';
+@import '@brandleadership/jb_landingpage/components/elements/podcast-audio/styles.css';
+@import '@brandleadership/jb_landingpage/components/related-articles/articles-1-column-wide/styles.css';
+@import '@brandleadership/jb_landingpage/components/related-articles/articles-2-columns/styles.css';
+@import '@brandleadership/jb_landingpage/components/related-articles/articles-content/styles.css';
 
 /* Sections */
 @import '../../../components/sections/OverviewpageHero/styles.css';
