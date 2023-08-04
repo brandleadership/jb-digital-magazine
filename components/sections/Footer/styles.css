@@ -27,6 +27,7 @@
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 11px;
+    line-height: 18px;
 }
 
 .footer_socials a {
@@ -192,10 +193,14 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        flex-wrap: wrap;
     }
 
     .footer_top .footer_mainLinks a {
-        margin-right: 0;
+        margin-right: 20px;
+        word-wrap: break-word;
+        white-space: normal;
+        max-width: 100%;
     }
 
     .footer_middle {
