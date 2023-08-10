@@ -46,7 +46,11 @@
 
 .articleteaser_content > div:nth-child(1) p {
     font-weight: 600;
-    min-width: max-content;
+    /* min-width: max-content; */
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .articleteaser_textBox div {
